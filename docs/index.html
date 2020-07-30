@@ -40,8 +40,8 @@
             <div class="field">
               <label class="label">Logger Type</label>
               <div class="control">
-                <input class="input" type="text" id="LOGGERTYPE", name="LOGGERTYPE">
-                <select name="ptionlist">
+                <label for="LOGGERTYPE">Choose a logger type</label>
+                <select name="LOGGERTYPE" id = "LOGGERTYPE">
                 <option>L5 LT</option>
                 <option>L5 LTC</option>
                 <option>L5 Junior</option>
@@ -52,7 +52,7 @@
               </div>
             </div>
             <div class="control">
-              <button class="button is-primary">Send your message</button>
+              <button class="button is-primary">Create a Logger File</button>
             </div>
           </form>
         </div>
@@ -64,16 +64,11 @@
     {{#each entries}}
     <div class="box">
       <article class="media">
-        <div class="media-left">
-          <figure class="image is-64x64">
-            <img src="{{icon}}" alt="No Image">
-          </figure>
-        </div>
         <div class="media-content">
           <div class="content">
             <p>
-              <strong>{{name}}</strong> <small>{{email}}</small>
-              <br> {{comment}}
+              <strong>{{SERIALNUMBER}}</strong> <small>{{LOGGERTYPE}}</small>
+              <br> 
             </p>
           </div>
         </div>

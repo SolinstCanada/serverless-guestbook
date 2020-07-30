@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guestbook - a serverless web application</title>
+  <title>Logger File - Solint Clould web application demo</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
 </head>
@@ -13,40 +13,42 @@
   <section class="section">
     <div class="container">
       <h1 class="title is-1">
-        Guestbook
+        Logger File
       </h1>
       <p class="subtitle">
-        A serverless web application
+        Solint Clould web application demo
       </p>
 
       <div class="columns">
         <div class="column">
           <h3 class="title is-3">
-            Messages from past visitors
+            List of Logger File
           </h3>
           <div id="entries"></div>
         </div>
         <div class="column">
           <h3 class="title is-3">
-            Add your message
+            Add a new Logger File
           </h3>
           <form id="addEntry">
             <div class="field">
-              <label class="label">Name</label>
+              <label class="label">Logger Serial Number</label>
               <div class="control">
-                <input class="input" type="text" placeholder="your name" id="name">
+                <input class="input" type="text" placeholder="Seven Digits Serial number" id="SERIALNUMBER">
               </div>
             </div>
             <div class="field">
-              <label class="label">Email</label>
+              <label class="label">Logger Type</label>
               <div class="control">
-                <input class="input" type="text" placeholder="your email" id="email">
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Comment</label>
-              <div class="control">
-                <textarea class="textarea" placeholder="your comment" id="comment"></textarea>
+                <input class="input" type="text" id="LOGGERTYPE", name="LOGGERTYPE">
+                <select name="ptionlist">
+                <option>L5 LT</option>
+                <option>L5 LTC</option>
+                <option>L5 Junior</option>
+                <option>AquaVent 5</option>
+                <option>LevelVent 5</option>
+                <option>Rainlogger 5</option>
+                </select>
               </div>
             </div>
             <div class="control">
